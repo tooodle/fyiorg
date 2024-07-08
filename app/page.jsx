@@ -24,7 +24,7 @@ export default function Home() {
               Finding You and I (FYI) is a teen-led group focused on raising
               mental health awareness and addressing youth issues. Our mission
               is to create a supportive environment where young people can
-              freely express their feelings and share their experiences.{" "}
+              freely express their feelings and share their experiences.
               <span className="md:inline hidden">
                 At FYI, we provide a safe space for emotional support,
                 understanding the critical role it plays in overall well-being.
@@ -86,7 +86,7 @@ export default function Home() {
                 where every emotion is valued and where we can embark on a
                 collective journey of self-discovery and mental well-being. Join
                 us at FYIorg, where together, we can find solace, understanding,
-                and the strength to navigate life's challenges as we discover
+                and the strength to navigate life&apos;s challenges as we discover
                 and embrace our true selves.
                 <br />
                 <br />
@@ -110,16 +110,16 @@ export default function Home() {
               At Finding You and I (FYI), we are dedicated to supporting
               teenagers facing personal challenges. We believe that every
               concern, no matter how small, deserves attention, as mental health
-              is a crucial component of overall well-being. In today's digital
+              is a crucial component of overall well-being. In today&apos;s digital
               age, the world can feel increasingly isolating, especially during
               our lowest moments when we desperately need someone to talk to.
               <br />
-              In a fast-paced world dominated by social media, it's easy to
+              In a fast-paced world dominated by social media, it&apos;s easy to
               compare our real lives to the curated reel lives of others,
               fueling insecurities and exacerbating mental health issues. FYI
               provides a safe space for anyone struggling with these feelings,
               offering emotional support and understanding. While our primary
-              focus is on today's youth, our mission is to be a supportive
+              focus is on today&apos;s youth, our mission is to be a supportive
               presence for anyone in need, fostering a community where mental
               health is prioritized and every voice is heard.
             </p>
@@ -139,7 +139,7 @@ export default function Home() {
               many due to financial and personal reasons. Yet, the need for
               emotional support remains critical. At FYI, we recognize the fear
               of judgment and concerns about privacy that often prevent people
-              from sharing their struggles. That's why we've created the
+              from sharing their struggles. That&apos;s why we&apos;ve created the
               EMOSPHERE—a safe, anonymous space where your emotions are valued
               and respected.
               <br />

@@ -9,7 +9,7 @@ function Emosphere() {
       <p className="text-pink-600 md:my-12 my-5 font-medium text-lg">
         We are excited to announce the upcoming launch of FYI Shops, a unique
         initiative to support our cause of raising mental health awareness and
-        addressing youth-related issues. By shopping with us, you'll be
+        addressing youth-related issues. By shopping with us, you&apos;ll be
         contributing to our mission and helping to create a positive impact in
         the lives of young people. Stay tuned for more details as we prepare to
         offer you an opportunity to support our cause through FYI Shops. Coming

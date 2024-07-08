@@ -7,7 +7,7 @@ function Emosphere() {
     <div className="md:px-96 pt-32 px-5 overflow-x-clip">
       <p className="text-pink-700 text-6xl font-bold">Releasing Soon</p>
       <p className="text-pink-600 my-12 font-medium text-lg">
-        We're excited to introduce Emoshpere, your upcoming haven for emotional
+        We&apos;re excited to introduce Emoshpere, your upcoming haven for emotional
         well-being and mental health support. Our platform is designed to create
         a safe, nurturing environment where you can share your feelings, find
         support, and connect with others who understand. Stay tuned as we
