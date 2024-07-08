@@ -21,7 +21,7 @@ export default function Home() {
               In <span className="text-pink-700"> Finding You & I</span> we find strength
             </p>
             <p className="w-full md:w-3/3 md:mt-10 mt-5 text-pink-600 md:text-lg text-base ">
-              Finding You and I (FYI) is a teen-led group focused on raising
+              Finding You and I (FYI) is a teen-led organization focused on raising
               mental health awareness and addressing youth issues. Our mission
               is to create a supportive environment where young people can
               freely express their feelings and share their experiences.

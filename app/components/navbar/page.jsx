@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <div className="navbar w-screen p-4 bg-white shadow-md flex items-center justify-between fixed  z-50  ">
       <div className="left">
-        <p className="text-3xl font-bold text-pink-700 flex item">fyi</p>
+        <p className="text-3xl font-bold text-pink-700 flex item">FYI</p>
       </div>
       <div className="center hidden md:block fixed left-1/2 -translate-x-1/2">
         <Link className="mx-4 font-medium text-pink-600" href={"/"}>
