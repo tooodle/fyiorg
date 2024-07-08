@@ -18,7 +18,8 @@ export default function Home() {
               FYI
             </p>
             <p className="text-xl md:text-3xl  font-medium text-pink-400 tracking-wide">
-              In <span className="text-pink-700"> Finding You & I</span> we find strength
+              {/* In <span className="text-pink-700"> Finding You & I</span> we find strength */}
+              Your Voice, Your Story, Our community
             </p>
             <p className="w-full md:w-3/3 md:mt-10 mt-5 text-pink-600 md:text-lg text-base ">
               Finding You and I (FYI) is a teen-led organization focused on raising
