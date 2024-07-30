@@ -44,7 +44,7 @@ function Admin() {
     const envPassword = process.env.NEXT_PUBLIC_PASSWORD;
 
     event.preventDefault();
-    if (username === envUsername && password === envPassword) {
+    if (username === 'sanyafyi' && password === 's@nyafyi') {
       setIsLoggedIn(true);
       // Redirect to admin dashboard or perform other actions
       toast.success("Logged in successfully!", {
