@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +6,6 @@ import hero from "@/public/hero.jpg";
 import founder from "@/public/founder.JPG";
 import cater from "@/public/cater.png";
 import { Instagram, Quote } from "lucide-react";
-
 
 export default function Home() {
   return (
@@ -18,14 +17,15 @@ export default function Home() {
               FYI
             </p>
             <p className="text-xl md:text-3xl  font-medium text-pink-400 tracking-wide">
-              In <span className="text-pink-700"> Finding You & I</span> we find strength
+              In <span className="text-pink-700"> Finding You & I</span> we find
+              strength
               {/* Your Voice, Your Story, Our community */}
             </p>
             <p className="w-full md:w-3/3 md:mt-10 mt-5 text-pink-600 md:text-lg text-base ">
-              Finding You and I (FYI) is a teen-led organization focused on raising
-              mental health awareness and addressing youth issues. Our mission
-              is to create a supportive environment where young people can
-              freely express their feelings and share their experiences.
+              Finding You and I (FYI) is a teen-led organization focused on
+              raising mental health awareness and addressing youth issues. Our
+              mission is to create a supportive environment where young people
+              can freely express their feelings and share their experiences.
               <span className="md:inline hidden">
                 At FYI, we provide a safe space for emotional support,
                 understanding the critical role it plays in overall well-being.
@@ -34,8 +34,11 @@ export default function Home() {
                 everyone.
               </span>
             </p>
-            <Button className="bg-pink-700 hover:bg-white hover:text-pink-700 border-2 rounded-3xl p-6 border-pink-700 cursor-default mt-12">
-              Emosphere Coming Soon!
+            <Button
+              className="bg-pink-700 hover:bg-white hover:text-pink-700 border-2 rounded-3xl p-6 border-pink-700 cursor-pointer mt-12"
+              asChild
+            >
+              <Link href={"/emosphere"}>Emosphere Out Now!</Link>
             </Button>
           </div>
           <Image
@@ -87,8 +90,8 @@ export default function Home() {
                 where every emotion is valued and where we can embark on a
                 collective journey of self-discovery and mental well-being. Join
                 us at FYIorg, where together, we can find solace, understanding,
-                and the strength to navigate life&apos;s challenges as we discover
-                and embrace our true selves.
+                and the strength to navigate life&apos;s challenges as we
+                discover and embrace our true selves.
                 <br />
                 <br />
                 ~ Sanya Ahuja
@@ -111,9 +114,10 @@ export default function Home() {
               At Finding You and I (FYI), we are dedicated to supporting
               teenagers facing personal challenges. We believe that every
               concern, no matter how small, deserves attention, as mental health
-              is a crucial component of overall well-being. In today&apos;s digital
-              age, the world can feel increasingly isolating, especially during
-              our lowest moments when we desperately need someone to talk to.
+              is a crucial component of overall well-being. In today&apos;s
+              digital age, the world can feel increasingly isolating, especially
+              during our lowest moments when we desperately need someone to talk
+              to.
               <br />
               In a fast-paced world dominated by social media, it&apos;s easy to
               compare our real lives to the curated reel lives of others,
@@ -140,9 +144,9 @@ export default function Home() {
               many due to financial and personal reasons. Yet, the need for
               emotional support remains critical. At FYI, we recognize the fear
               of judgment and concerns about privacy that often prevent people
-              from sharing their struggles. That&apos;s why we&apos;ve created the
-              EMOSPHERE—a safe, anonymous space where your emotions are valued
-              and respected.
+              from sharing their struggles. That&apos;s why we&apos;ve created
+              the EMOSPHERE—a safe, anonymous space where your emotions are
+              valued and respected.
               <br />
               <br />
               In the EMOSPHERE, you can share your experiences and receive
@@ -153,8 +157,12 @@ export default function Home() {
               and those who can provide it in an accessible, compassionate way.{" "}
             </p>
 
-
-          <Link href={'/emosphere'} className="bg-white hover:bg-white text-pink-700 border-2 rounded-full border-pink-700 cursor-pointer p-5 mx-auto no-underline">Try Emoshpere Now!</Link>
+            <Link
+              href={"/emosphere"}
+              className="bg-white hover:bg-white text-pink-700 border-2 rounded-full border-pink-700 cursor-pointer p-5 mx-auto no-underline"
+            >
+              Try Emoshpere Now!
+            </Link>
           </div>
         </div>
       </div>

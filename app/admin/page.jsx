@@ -137,7 +137,7 @@ function Admin() {
         <div>
           {confessions.length > 0 ? (
             <div>
-              <p className="text-pink-700 text-6xl font-bold mt-24 ml-5">
+              <p className="text-pink-700 text-4xl font-bold mt-24 ml-5">
                 Confessions:
               </p>
               <div className=" flex flex-wrap w-full gap-6 p-5">
