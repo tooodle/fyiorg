@@ -31,8 +31,11 @@ function Navbar() {
         </Link>
       </div>
       <div className="right flex items-center">
-        <Button className="bg-white hover:bg-white text-pink-700 border-2 rounded-3xl border-pink-700 cursor-default ">
-          Emosphere Coming Soon!
+
+        <Button className="bg-pink-700 hover:bg-pink-700 text-white border-2 rounded-3xl border-pink-700 cursor-pointer " asChild>
+          <Link href={'/emosphere'}>
+              Emosphere Out Now!
+          </Link>
         </Button>
         <Sheet>
           <SheetTrigger className=" md:hidden mx-2">

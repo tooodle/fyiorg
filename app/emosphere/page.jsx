@@ -1,10 +1,13 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Emosphere() {
   const maxCharacters = 500;
   const [text, setText] = useState("");
   const [isConfirmed, setIsConfirmed] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState("idle"); // Initial submission status
 
   const handleInputChange = (event) => {
     setText(event.target.value);
@@ -12,7 +15,7 @@ function Emosphere() {
 
   const charactersLeft = maxCharacters - text.length;
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission behavior
 
     if (!isConfirmed) {
@@ -20,11 +23,59 @@ function Emosphere() {
       return; // Early exit if confirmation is not checked
     }
 
-    
-    console.log("Confession submitted:", text);
-    setText(""); // Clear the text after successful submission
-    setIsConfirmed(false); // Reset checkbox state
+    setSubmissionStatus("submitting"); // Update submission status
+
+    try {
+      const response = await fetch("http://nainesh.earthie.in/confessions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      setSubmissionStatus("success"); // Update submission status on success
+      console.log("Confession saved successfully");
+    } catch (error) {
+      console.error("Error saving confession:", error);
+      setSubmissionStatus("error"); // Update submission status on error
+    } finally {
+      setText(""); // Clear the text input after submission
+      setIsConfirmed(false); // Reset checkbox state
+    }
   };
+
+  useEffect(() => {
+    // Handle different submission statuses (optional)
+    if (submissionStatus === "success") {
+      toast.success('Confession sent successfully!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+      setTimeout(() => setSubmissionStatus("idle"), 3000); // Reset after 3 seconds
+    } else if (submissionStatus === "error") {
+      // Show error message (e.g., using a modal)
+      setTimeout(() => setSubmissionStatus("idle"), 5000); // Reset after 5 seconds
+      toast.error('Something went wrong!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    }
+  }, [submissionStatus]);
 
   return (
     <div className="md:px-96 pt-32 px-5 overflow-x-clip">
@@ -63,6 +114,19 @@ function Emosphere() {
       >
         Submit Confession
       </button>
+
+      <ToastContainer
+      position="top-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
+      />
     </div>
   );
 }
