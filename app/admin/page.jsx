@@ -157,7 +157,7 @@ function Admin() {
           </Button>
         </div>
       ) : (
-        <Card className="w-[425px] m-auto mt-32">
+        <Card className="w-[375px] m-auto mt-32">
           <CardHeader>
             <CardTitle className="text-pink-700">Admin Login</CardTitle>
             <CardDescription className="text-pink-600">
