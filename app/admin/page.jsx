@@ -78,7 +78,7 @@ function Admin() {
     const fetchConfessions = async () => {
       if (isLoggedIn) {
         try {
-          const response = await fetch("http://nainesh.earthie.in/confessions");
+          const response = await fetch("https://fyiorg.earthie.in/confessions");
           console.log(response);
           const data = await response.json();
           console.log(data);

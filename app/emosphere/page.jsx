@@ -26,7 +26,7 @@ function Emosphere() {
     setSubmissionStatus("submitting"); // Update submission status
 
     try {
-      const response = await fetch("http://nainesh.earthie.in/confessions", {
+      const response = await fetch("https://fyiorg.earthie.in/confessions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
