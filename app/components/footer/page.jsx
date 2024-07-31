@@ -7,7 +7,7 @@ function Footer() {
       <div className="m-0 p-0 flex gap-3 items-center">
         Follow us on :{" "}
         <Link href={"https://www.instagram.com/fyiorg"}>
-          <Instagram />
+          <Instagram/>
           
         </Link>{" "}
       </div>

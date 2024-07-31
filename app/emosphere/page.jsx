@@ -82,7 +82,7 @@ function Emosphere() {
       <p className="text-pink-700 text-6xl font-bold">Confess Now!</p>
       <p className="text-pink-600 my-4 font-medium text-lg">
         We at FYI respect your privacy and any confessions made are kept
-        anonymous. So without even a second thought just pour it all out.
+        anonymous. So without any second thought, just pour it all out. We are here to listen.
       </p>
       <div>
         <textarea
